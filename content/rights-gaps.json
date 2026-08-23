@@ -1,0 +1,39 @@
+{
+  "_comment": "Memes referenced by name in project docs (the ecosystem map, Volume I/II lists, or a user's own exhibit-card list) that are not yet safe to exhibit, per the register's own methodology in docs/source/rights-register.xlsx and Integration Spec section 7 ('Both need register rows before they get exhibit pages').",
+  "do_not_show": [
+    {
+      "register_id": "M19",
+      "common_name": "Rickroll",
+      "display_tier": "D3",
+      "rule": "Reference by name only. No image, thumbnail, or video excerpt under any condition."
+    }
+  ],
+  "not_yet_registered": [
+    {
+      "common_name": "Charlie Bit My Finger",
+      "volume": "I — The First Outbreak",
+      "risk_note": "Home video of two children that sold at auction in 2020. Needs a register row (rights holder, evidence grade, display tier) before any exhibit card is produced. Treat as high sensitivity given the subjects were minors."
+    },
+    {
+      "common_name": "Dancing Baby",
+      "volume": "I — The First Outbreak",
+      "risk_note": "Predates modern meme-rights case law (1996 3D animation). Needs a register row before display; likely low risk but unverified. An original stylized redraw (not a literal reproduction) is the right display pattern once registered."
+    },
+    {
+      "common_name": "Chuck Norris Facts",
+      "volume": "I — The First Outbreak",
+      "risk_note": "Involves a living, identifiable celebrity with an active trademark presence and no clear copyright owner for the joke-text corpus. This is a right-of-publicity question layered on top of the usual copyright analysis, not just a copyright question — depicting his likeness needs separate consideration from quoting the jokes. Needs a register row before any exhibit card depicts him."
+    },
+    {
+      "common_name": "LOLCats",
+      "volume": "II — The Golden Age",
+      "risk_note": "The register has a row for Grumpy Cat (M02) but no row for the broader anonymous captioned-cat-photo genre. Per the register's own precedent for Rage Comics/Trollface (M21/M13), LOLCats should get its own D1-candidate row (anonymous macro genre, original redraw only) rather than being treated as equivalent to Grumpy Cat, which is a single litigated, individually-owned meme."
+    },
+    {
+      "common_name": "Harlem Shake",
+      "volume": null,
+      "risk_note": "Not present in any of the four volumes or the 24-row register. Involves a commercial music track (label-owned audio) plus user-submitted video content — likely a composite-rights case similar to M15 Woman Yelling at a Cat. Needs full research before any register row is proposed, let alone an exhibit card."
+    }
+  ],
+  "action_required": "Do not produce or publish an exhibit image for any entry in this file until it is added to the register with a tier, rights holder, and evidence grade. Text-only references (name, date, cultural context) are fine in the meantime, per the same rule already applied to Rickroll and to the Volume I gaps the spec itself flags."
+}

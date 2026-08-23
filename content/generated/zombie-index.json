@@ -1,0 +1,199 @@
+{
+  "rated": [
+    {
+      "register_id": "M01",
+      "common_name": "Doge",
+      "binomial": "Canis contemplans",
+      "status": "undead",
+      "undead_rating": 5,
+      "display_tier": "D2"
+    },
+    {
+      "register_id": "M02",
+      "common_name": "Grumpy Cat",
+      "binomial": "Felis morosa",
+      "status": "contained",
+      "undead_rating": 5,
+      "display_tier": "D2"
+    },
+    {
+      "register_id": "M03",
+      "common_name": "Success Kid",
+      "binomial": "Puer triumphans",
+      "status": "corporate",
+      "undead_rating": 5,
+      "display_tier": "D2"
+    },
+    {
+      "register_id": "M05",
+      "common_name": "Nyan Cat",
+      "binomial": "Felis arcus",
+      "status": "corporate",
+      "undead_rating": 4,
+      "display_tier": "D2"
+    },
+    {
+      "register_id": "M13",
+      "common_name": "Trollface",
+      "binomial": "Vultus dolosus",
+      "status": "undead",
+      "undead_rating": 4,
+      "display_tier": "D2"
+    },
+    {
+      "register_id": "M10",
+      "common_name": "Bad Luck Brian",
+      "binomial": "Puer infortunatus",
+      "status": "dormant",
+      "undead_rating": 3,
+      "display_tier": "D2"
+    },
+    {
+      "register_id": "M06",
+      "common_name": "Keyboard Cat",
+      "binomial": "Felis rhythmicus",
+      "status": "dormant",
+      "undead_rating": 3,
+      "display_tier": "D2"
+    },
+    {
+      "register_id": "M09",
+      "common_name": "Overly Attached Girlfriend",
+      "binomial": "Femina adhaerens",
+      "status": "dormant",
+      "undead_rating": 3,
+      "display_tier": "D2"
+    },
+    {
+      "register_id": "M23",
+      "common_name": "All Your Base",
+      "binomial": "Textus imperativus",
+      "status": "extinct",
+      "undead_rating": 2,
+      "display_tier": "D2"
+    },
+    {
+      "register_id": "M21",
+      "common_name": "Rage comic faces (general)",
+      "binomial": "Facies anonyma",
+      "status": "extinct",
+      "undead_rating": 2,
+      "display_tier": "D1"
+    }
+  ],
+  "unrated": [
+    {
+      "register_id": "M24",
+      "common_name": "Blinking White Guy",
+      "binomial": null,
+      "status": null,
+      "undead_rating": null,
+      "display_tier": "D2"
+    },
+    {
+      "register_id": "M08",
+      "common_name": "Disaster Girl",
+      "binomial": null,
+      "status": null,
+      "undead_rating": null,
+      "display_tier": "D2"
+    },
+    {
+      "register_id": "M07",
+      "common_name": "Distracted Boyfriend",
+      "binomial": null,
+      "status": null,
+      "undead_rating": null,
+      "display_tier": "D3"
+    },
+    {
+      "register_id": "M16",
+      "common_name": "Drakeposting",
+      "binomial": null,
+      "status": null,
+      "undead_rating": null,
+      "display_tier": "D3"
+    },
+    {
+      "register_id": "M18",
+      "common_name": "Ermahgerd",
+      "binomial": null,
+      "status": null,
+      "undead_rating": null,
+      "display_tier": "D2"
+    },
+    {
+      "register_id": "M12",
+      "common_name": "Hide the Pain Harold",
+      "binomial": null,
+      "status": null,
+      "undead_rating": null,
+      "display_tier": "D2"
+    },
+    {
+      "register_id": "M22",
+      "common_name": "Loss",
+      "binomial": null,
+      "status": null,
+      "undead_rating": null,
+      "display_tier": "D1"
+    },
+    {
+      "register_id": "M04",
+      "common_name": "Pepe the Frog",
+      "binomial": null,
+      "status": null,
+      "undead_rating": null,
+      "display_tier": "D3"
+    },
+    {
+      "register_id": "M19",
+      "common_name": "Rickroll",
+      "binomial": null,
+      "status": null,
+      "undead_rating": null,
+      "display_tier": "D3"
+    },
+    {
+      "register_id": "M17",
+      "common_name": "Salt Bae",
+      "binomial": null,
+      "status": null,
+      "undead_rating": null,
+      "display_tier": "D3"
+    },
+    {
+      "register_id": "M11",
+      "common_name": "Socially Awkward Penguin",
+      "binomial": null,
+      "status": null,
+      "undead_rating": null,
+      "display_tier": "D3"
+    },
+    {
+      "register_id": "M14",
+      "common_name": "This Is Fine",
+      "binomial": null,
+      "status": null,
+      "undead_rating": null,
+      "display_tier": "D2"
+    },
+    {
+      "register_id": "M20",
+      "common_name": "Wojak / Feels Guy",
+      "binomial": null,
+      "status": null,
+      "undead_rating": null,
+      "display_tier": "D1"
+    },
+    {
+      "register_id": "M15",
+      "common_name": "Woman Yelling at a Cat",
+      "binomial": null,
+      "status": null,
+      "undead_rating": null,
+      "display_tier": "D3"
+    }
+  ],
+  "note": "unrated specimens have no field-guide content yet (undead_rating is null) \u2014 they're queued for a future volume, not missing data."
+}
