@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="'Arial Narrow', 'Helvetica Neue Condensed', Impact, sans-serif">
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#F2EDE1" stroke-width="0.5" opacity="0.06"/>
+    </pattern>
+    <path id="leftArc" d="M 175.5 218.6 A 160 160 0 0 1 484.5 218.6" />
+    <path id="rightArc" d="M 415.5 218.6 A 160 160 0 0 1 724.5 218.6" />
+  </defs>
+
+  <rect x="0" y="0" width="900" height="520" fill="#0B0B0C"/>
+  <rect x="0" y="0" width="900" height="520" fill="url(#grid)"/>
+
+  <text x="450" y="52" text-anchor="middle" fill="#B9D52B" font-size="18" font-weight="700" letter-spacing="4">
+    MEMECRYPT &#8212; KOAN 01
+  </text>
+
+  <circle cx="330" cy="260" r="160" fill="none" stroke="#F2EDE1" stroke-width="3" opacity="0.9"/>
+  <circle cx="570" cy="260" r="160" fill="none" stroke="#F2EDE1" stroke-width="3" opacity="0.9"/>
+
+  <text fill="#F2EDE1" font-size="28" font-weight="700" letter-spacing="1.5">
+    <textPath href="#leftArc" startOffset="50%" text-anchor="middle">I ALWAYS SAY WHAT I MEME</textPath>
+  </text>
+  <text fill="#F2EDE1" font-size="28" font-weight="700" letter-spacing="1.5">
+    <textPath href="#rightArc" startOffset="50%" text-anchor="middle">I NEVER MEME WHAT I SAY</textPath>
+  </text>
+
+  <text x="450" y="270" text-anchor="middle" dominant-baseline="middle" fill="#B9D52B" font-size="46" font-weight="700">&#8734;</text>
+
+  <text x="450" y="478" text-anchor="middle" fill="#F2EDE1" font-size="14" font-weight="700" letter-spacing="3" opacity="0.75">
+    INSTITUTIONAL VOICE &#8212; SEE /QUOTATIONS
+  </text>
+  <text x="450" y="500" text-anchor="middle" fill="#F2EDE1" font-size="12" letter-spacing="2" opacity="0.5">
+    ALL ARTIFACTS RESERVED.
+  </text>
+</svg>

@@ -8,5 +8,7 @@
   "price": null,
   "status": "concept",
   "image_source": "original_design",
+  "image": "assets/koans/i-always-say-what-i-meme-infinity.svg",
+  "image_alt": "Two overlapping bone-white circles forming an infinity shape on a carbon-black ground, an acid-green infinity glyph at the crossing point. 'I ALWAYS SAY WHAT I MEME' curves along the top of the left circle, 'I NEVER MEME WHAT I SAY' along the top of the right.",
   "note": "Price, SKU, and accession are unassigned pending the currency/fulfilment decision in Integration Spec section 9."
 }
