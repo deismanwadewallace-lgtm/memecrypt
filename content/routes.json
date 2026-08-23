@@ -1,0 +1,37 @@
+{
+  "_comment": "Full route table per Integration Spec section 3. 'status: live' means real content exists somewhere in this repo or the current site; 'coming-soon' means the route resolves but shows placeholder copy in museum voice, per Phase 2 acceptance: every route resolves, no dead anchors.",
+  "nav": ["Museum", "Species", "Advisory", "Research", "Shop"],
+  "routes": [
+    { "path": "/", "nav": null, "title": "Hall of the Undead", "contains": "Hero, current advisory, wing index", "status": "live", "note": "Exists on the current single-page site as the top of page." },
+    { "path": "/about", "nav": null, "title": "What Are Zombie Memes", "contains": "Thesis, three claims (contagion, effortlessness, detachment)", "status": "coming-soon", "coming_soon_copy": "This wing is being installed. The thesis is written — see docs/source/memecrypt-integration-spec.md section 2 — but it has not yet been mounted as its own page." },
+    { "path": "/museum", "nav": "Museum", "title": "Museum", "contains": "Wing index", "status": "coming-soon", "coming_soon_copy": "The wing index is being catalogued. Individual halls are reachable below once built." },
+    { "path": "/museum/hall", "nav": "Museum", "title": "Hall of the Undead", "contains": "Specimen grid", "status": "coming-soon", "coming_soon_copy": "The specimen grid is under construction. 24 specimens are registered; 0 currently clear the museum's own rules for display. See /research/provenance." },
+    { "path": "/museum/specimen/[register_id]", "nav": "Museum", "title": "Specimen page", "contains": "One page per content/specimens/*.json record", "status": "coming-soon", "coming_soon_copy": "Specimen pages render from content/specimens/*.json via the rendering rule in scripts/build_register.py. No template has been built yet." },
+    { "path": "/museum/timeline", "nav": "Museum", "title": "Infection Map", "contains": "Timeline, 2005 to now", "status": "live", "note": "Exists on the current site at /#timeline." },
+    { "path": "/museum/autopsies", "nav": "Museum", "title": "Autopsy Index", "contains": "Index of forensic reports", "status": "coming-soon", "coming_soon_copy": "The autopsy wing has not opened. Cause-of-death and resurrection-date fields exist in the schema (content/specimens/*.json) but are unwritten for every specimen." },
+    { "path": "/museum/autopsy/[register_id]", "nav": "Museum", "title": "Autopsy report", "contains": "Forensic report for one specimen", "status": "coming-soon", "coming_soon_copy": "This specimen has not been autopsied." },
+    { "path": "/museum/index", "nav": "Museum", "title": "Zombie Index", "contains": "Sortable rating table", "status": "coming-soon", "coming_soon_copy": "The index is compiled at build time from content/specimens/*.json (see scripts/build_zombie_index.py) but no page renders it yet. Most specimens have no undead_rating assigned; ratings exist for Volume II specimens only so far." },
+    { "path": "/species", "nav": "Species", "title": "Field Guide", "contains": "Field guide index", "status": "live", "note": "Exists on the current site at /#species." },
+    { "path": "/species/[binomial]", "nav": "Species", "title": "Species entry", "contains": "Field guide entry with plate", "status": "coming-soon", "coming_soon_copy": "This species has not been formally described. No binomial has been assigned." },
+    { "path": "/advisory", "nav": "Advisory", "title": "Advisory", "contains": "Current outbreak level, standing advisory", "status": "coming-soon", "coming_soon_copy": "Outbreak level: high. It has not been lowered. A dedicated advisory page has not been built; the advisory currently lives only on the MC.2026.023 Standing Advisory product." },
+    { "path": "/advisory/map", "nav": "Advisory", "title": "Infection Map", "contains": "Origin, vector, host, outcome", "status": "coming-soon", "coming_soon_copy": "The four-field map (origin, vector, host, outcome) is documented on the MC.2026.019 Transmission Tote. It has not been built as an interactive page." },
+    { "path": "/advisory/lab", "nav": "Advisory", "title": "Meme Lab", "contains": "Sighting submissions", "status": "coming-soon", "coming_soon_copy": "Sighting submissions are not yet open. This was a separate wing in the ecosystem map; the spec folds it here as a feature, not a destination." },
+    { "path": "/research", "nav": "Research", "title": "Research", "contains": "Essays index", "status": "live", "note": "Exists on the current site as anchor content." },
+    { "path": "/research/anti-meme", "nav": "Research", "title": "The Anti-Meme Wing", "contains": "Anti-meme synthesis", "status": "coming-soon", "coming_soon_copy": "The anti-meme argument is drafted in the 10 August 2026 synthesis referenced by the integration spec but has not been mounted as its own page. MC.2026.052 in the shop is the physical artifact version of this argument." },
+    { "path": "/research/provenance", "nav": "Research", "title": "Provenance", "contains": "Rights, attribution, and what is not on display", "status": "built-as-data", "note": "Written in Phase 4 as content/pages/provenance.json, computed live from content/generated/summary.json. No page template exists to render it yet." },
+    { "path": "/quotations", "nav": null, "title": "The Koan Wall", "contains": "Slogan corpus, all four families", "status": "built-as-data", "note": "Written in Phase 4 as content/pages/quotations.json. No page template exists to render it yet." },
+    { "path": "/products", "nav": "Shop", "title": "Gift Shop", "contains": "The four product lines", "status": "live", "note": "Exists on the current site, currently empty of real products." },
+    { "path": "/products/[sku]", "nav": "Shop", "title": "Product page", "contains": "Product page rendered as a wall label with accession number", "status": "coming-soon", "coming_soon_copy": "This product has not been mounted. See content/products/ for the underlying catalogue and launch-collection data." }
+  ],
+  "cut_from_map": [
+    { "name": "The Cemetery", "reason": "Duplicates the Hall of the Undead; folded into it as background texture." },
+    { "name": "Gallery", "reason": "Undefined in the map and redundant with the Hall." },
+    { "name": "Meme Lab as a top-level wing", "reason": "Kept as a feature nested under Advisory, not a destination." }
+  ],
+  "founding_date_audit": {
+    "canonical": 2005,
+    "scope": "This purge applies only to the museum's own founding/Est. date and tagline copy, not to a specimen's real-world first_outbreak year. content/specimens/m11-socially-awkward-penguin.json correctly has first_outbreak: 2009 — that is the meme's actual first-circulation year per the register, not a founding-date conflict.",
+    "purge": [2002, 2009],
+    "result": "No stray museum-founding-date references to 2002 or 2009 found in this repo's content or docs. The correction otherwise applies to the live site's own assets, which this repo does not contain."
+  }
+}
