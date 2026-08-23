@@ -131,6 +131,14 @@ h1 {
   line-height: 0.79;
 }
 
+.hero__standfirst {
+  max-width: 42rem;
+  margin: 24px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
 .hero__note {
   position: relative;
   padding: 28px 0 0 30px;
@@ -163,6 +171,10 @@ h1 {
   color: #c7c8c2;
   font-size: clamp(1rem, 1.4vw, 1.2rem);
   line-height: 1.7;
+}
+
+#display-policy-title p + p {
+  margin-top: 12px;
 }
 
 .collection {

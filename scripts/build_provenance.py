@@ -21,7 +21,8 @@ NUMBER_WORDS = [
     "zero", "one", "two", "three", "four", "five", "six", "seven", "eight",
     "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen",
     "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty-one",
-    "twenty-two", "twenty-three", "twenty-four",
+    "twenty-two", "twenty-three", "twenty-four", "twenty-five", "twenty-six",
+    "twenty-seven", "twenty-eight", "twenty-nine",
 ]
 
 
@@ -32,14 +33,20 @@ def words(n):
 def main():
     summary = json.loads(SUMMARY_PATH.read_text())
     tiers = summary["display_tier_counts"]
+    decisions = summary["display_decision_counts"]
     total = summary["total_specimens"]
     d1, d2, d3 = tiers.get("D1", 0), tiers.get("D2", 0), tiers.get("D3", 0)
+    declined = decisions.get("declined", 0)
+    unavailable = decisions.get("unavailable", 0)
+    cleared = decisions.get("cleared", 0)
     identifiable = summary["identifiable_person_count"]
     minors = summary["minor_in_image_count"]
 
     thesis = (
         f"Of {words(total)} specimens in the permanent collection, {words(d1)} may be shown freely, "
         f"{words(d2)} require a rights note, and {words(d3)} cannot be shown at all. "
+        f"The museum currently displays {words(cleared)}: {words(declined)} are declined and "
+        f"{words(unavailable)} are unavailable. "
         f"{words(identifiable).capitalize()} depict an identifiable person. "
         f"{words(minors).capitalize()} depict a person who was a child at the time."
     )

@@ -17,6 +17,7 @@
   "mutation": null,
   "prognosis": null,
   "display_tier": "D2",
+  "display_decision": "declined",
   "rights_holder": "The performer and the production company",
   "evidence_grade": "Reported, not verified this pass",
   "image_mode": null,

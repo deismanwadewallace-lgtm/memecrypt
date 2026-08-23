@@ -15,18 +15,16 @@ exports of the same photos (`exports/*.png`, `gallery-preview.png`).
 That conflicts with this repo's own rights register
 (`docs/source/rights-register.xlsx`) and rendering rule
 (`memecrypt-integration-spec.md` §4, enforced in `scripts/build_register.py`):
-a specimen only gets an image once tier, image mode, commentary, and
-attribution all clear, and right now nothing does. Checked against the
-register, ten of these fourteen specimens already have a row — at "licence
-only" or "never pursue," never pre-cleared — and two of those ("never
-pursue," identifiable minor) are Success Kid (M03) and Bad Luck Brian (M10).
+a specimen only gets an image once tier, display decision, image mode,
+commentary, and attribution all clear, and right now nothing does. All fourteen
+specimens now have a register row. Ten are D2 and have been deliberately
+declined for display; four are D3 and unavailable. Two of the D2 rows
+("never pursue," identifiable minor) are Success Kid (M03) and Bad Luck Brian
+(M10).
 The Success Kid photo specifically has litigation history: *Griner v. King
 for Congress* rejected this exact "educational/fair use" argument on appeal
-(8th Cir. 2024, cert. denied 2025). Four specimens (Charlie Bit My Finger,
-Dancing Baby, LOLCats, Harlem Shake) aren't in the register at all — the
-integration spec's own Volume I/II notes already flagged Charlie Bit My
-Finger and Dancing Baby as needing register rows before they get exhibit
-pages, and the same applies to LOLCats and Harlem Shake.
+(8th Cir. 2024, cert. denied 2025). Charlie Bit My Finger, Dancing Baby,
+LOLCats, and Harlem Shake were added as M26–M29 on 23 August 2026.
 
 ## What changed from the received package
 
@@ -35,31 +33,27 @@ pages, and the same applies to LOLCats and Harlem Shake.
 - `app.js` — each card no longer renders an `<img>`. The original-drawing
   line-art specimen mark (already part of the package, used before only as
   a small watermark) is now the card's primary visual, enlarged to fill the
-  frame — the same "original redraw, not the circulating file" treatment
-  the register already uses for Wojak (M20), Rage Comics (M21), and Loss
-  (M22). Each card carries a `registerStatus` field (the register ID and
-  tier, or "unregistered") and a `displayNote` explaining why the photo
-  isn't shown, plus a `NOT ON DISPLAY` badge. The two Creative Commons
+  frame. Each card carries a `registerStatus` field with the register ID and
+  tier and a `displayNote` explaining the curatorial decision. The badge now
+  distinguishes `DECLINED FOR DISPLAY` from `NOT PERMITTED FOR DISPLAY`.
+  The two Creative Commons
   claims in the original `credit` text (LOLCats, Harlem Shake) are kept but
   flagged as claimed by the source package and not independently verified —
   attempted verification against Wikimedia was blocked in this environment.
-- `index.html` — added a short "Display policy" note above the grid,
-  in the same voice as placeholder card MC.2026.009, explaining why every
-  card shows a drawing instead of a photograph.
+- `index.html` — the display advisory states that the museum is declining
+  display rather than waiting for clearance, as accepted in ADR 0003.
 - `sources.md` — unchanged. The research links are fine to keep; nothing in
   it reproduces a copyrighted image.
 - Photographer/creator names are still credited on each card. That's a
   factual citation, not a reproduction of the image, and matches how the
   register itself credits rights holders on D3 (do-not-show) entries.
 
-## Before this goes further
+## Current posture
 
-- Charlie Bit My Finger, Dancing Baby, LOLCats, and Harlem Shake need actual
-  register rows in `docs/source/rights-register.xlsx` — evidence grade,
-  enforcement history, identifiable-person/minor determination — researched
-  and cited the way the existing 24 rows are, not assumed. This repo
-  deliberately doesn't add rows on their behalf without that research.
-- The four "licence only" specimens here (Doge, Nyan Cat, Keyboard Cat,
-  Trollface) are the least-risky tier in the existing register, but "licence
-  only" means a licence has to actually be secured before an image is
-  displayed — it isn't a green light on its own.
+- The register now contains 29 specimens, including M25–M29 from the 23 August
+  resolution package.
+- The four D3 cards in this wing are unavailable on any terms. The ten D2 cards
+  are declined under ADR 0003 even though the policy could permit a conditional
+  thumbnail treatment.
+- No card may leave the line-art treatment without its own recorded curatorial
+  decision. Uploading an image is never enough.

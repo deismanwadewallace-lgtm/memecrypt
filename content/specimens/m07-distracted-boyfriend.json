@@ -17,6 +17,7 @@
   "mutation": null,
   "prognosis": null,
   "display_tier": "D3",
+  "display_decision": "unavailable",
   "rights_holder": "Antonio Guillem, via stock agencies",
   "evidence_grade": "Unverified this pass",
   "image_mode": null,

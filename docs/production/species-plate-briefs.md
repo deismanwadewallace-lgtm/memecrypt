@@ -1,6 +1,6 @@
 # Species plate commissioning briefs — Volume II
 
-Six original naturalist-style illustration plates for the Field Guide and
+Five original naturalist-style illustration plates for the Field Guide and
 `/species/[binomial]` pages, following the pattern already set by
 MC.2026.036 (*Reactio perpetua*): "The guide names no real person and
 reproduces no photograph. Species are described the way a birder
@@ -15,8 +15,9 @@ briefs to run through whatever tool you used for the launch collection —
 not finished art. Once generated, drop the file at the path named in each
 brief's `content/specimens/*.json` record (set `image_mode` to
 `"original_plate"` and fill in `commentary` + `attribution` once it
-exists — that's what flips the specimen from placeholder to rendered in
-`scripts/build_register.py`).
+exists). Those fields satisfy the rendering prerequisites, but they do not
+override `display_decision`. Every current D1/D2 record remains `declined`;
+moving one to `cleared` requires a specimen-specific ADR under ADR 0003.
 
 ---
 
@@ -24,7 +25,7 @@ exists — that's what flips the specimen from placeholder to rendered in
 
 ```text
 Use case: species-plate
-Asset type: naturalist field-guide illustration plate for the Memecrypt museum
+Asset type: naturalist field-guide illustration plate for the Memeography museum
 Primary request: an anatomical study of an invented grinning-face specimen, in the visual language of a 19th-century natural history plate, illustrating "the folk-art fallacy" — a species mistaken for ownerless because it looks hand-drawn
 Subject: a single abstract grinning-face glyph (original geometry, NOT the circulating troll face image) shown at rest and mid-transmission, with callout lines to invented anatomical features: "assumed-public-domain gland," "redraw vector," "attribution blind spot"
 Style/medium: engraved naturalist plate line art, cross-hatching, museum specimen-diagram conventions
@@ -40,7 +41,7 @@ Avoid: photorealism, the real trollface silhouette, internet-clipart style
 
 ```text
 Use case: species-plate
-Asset type: naturalist field-guide illustration plate for the Memecrypt museum
+Asset type: naturalist field-guide illustration plate for the Memeography museum
 Primary request: an anatomical study of an invented "triumphant gesture" specimen — an abstracted, anonymized human figure silhouette mid-fist-pump, illustrating disproportionate emotional intensity rather than any real person
 Subject: a single generic silhouette (no face, no identifiable features, no likeness of any real person) shown mid-gesture, with callout lines to invented behavioral traits: "disproportion index," "caption vector," "statutory predator marker"
 Style/medium: engraved naturalist plate line art, museum specimen-diagram conventions
@@ -56,7 +57,7 @@ Avoid: any recognizable human likeness, photorealism, baby/infant imagery
 
 ```text
 Use case: species-plate
-Asset type: naturalist field-guide illustration plate for the Memecrypt museum
+Asset type: naturalist field-guide illustration plate for the Memeography museum
 Primary request: an anatomical study of an invented "rhythmic cat" specimen, illustrating comedic-timing transmission rather than the real cat or footage
 Subject: a single original stylized cat silhouette (not a likeness of the real animal) posed at a keyboard-shaped prop, with callout lines to invented traits: "timing organ," "loop duration," "reaction-gif habitat marker"
 Style/medium: engraved naturalist plate line art, museum specimen-diagram conventions
@@ -72,7 +73,7 @@ Avoid: photorealism, recognizable pet portraiture
 
 ```text
 Use case: species-plate
-Asset type: naturalist field-guide illustration plate for the Memecrypt museum
+Asset type: naturalist field-guide illustration plate for the Memeography museum
 Primary request: an anatomical study of an invented "rainbow-loop cat" specimen, illustrating durational/repetition transmission rather than the real animated GIF
 Subject: a single original geometric cat-form glyph (distinct pixel-free line design, not the circulating 8-bit sprite) with an invented trailing arc motif, callouts to "loop organ," "repetition gland," "licensed-variant marker"
 Style/medium: engraved naturalist plate line art, museum specimen-diagram conventions
@@ -88,7 +89,7 @@ Avoid: photorealism, 8-bit/pixel-art rendering, a literal rainbow gradient
 
 ```text
 Use case: species-plate
-Asset type: naturalist field-guide illustration plate for the Memecrypt museum
+Asset type: naturalist field-guide illustration plate for the Memeography museum
 Primary request: a class-level (genus) plate representing the extinct rage-comic-face format as a category, not any single named face, since individually traceable faces are excluded per the register's own rule
 Subject: a grid of five to six wholly original, simple line-drawn abstract face glyphs (invented expressions, not redraws of any known rage face), arranged like a specimen tray, with a small "EXTINCT" stamp
 Style/medium: engraved naturalist plate line art, museum specimen-diagram conventions, deliberately crude/MS-Paint-referencing line weight as a stylistic nod without copying any actual face
@@ -100,8 +101,8 @@ Constraints: every face glyph must be an original invented expression; none may 
 Avoid: reproducing any specific known rage face, photorealism
 ```
 
-## LOLCats — blocked
+## LOLCats — unavailable
 
-No brief written. Per `content/rights-gaps.json`, LOLCats has no register row
-yet — commission this plate only after it gets a display tier, following
-the same process already applied to every other specimen here.
+No brief written. LOLCats is registered as M28 at D3 with
+`display_decision: unavailable`; it cannot receive a display plate under the
+current policy.

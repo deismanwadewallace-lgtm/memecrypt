@@ -17,6 +17,7 @@
   "mutation": null,
   "prognosis": null,
   "display_tier": "D1",
+  "display_decision": "declined",
   "rights_holder": "No established owner",
   "evidence_grade": "Unverified this pass",
   "image_mode": null,

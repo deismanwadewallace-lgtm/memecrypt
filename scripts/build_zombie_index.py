@@ -31,6 +31,7 @@ def main():
             "status": r["status"],
             "undead_rating": r["undead_rating"],
             "display_tier": r["display_tier"],
+            "display_decision": r["display_decision"],
         }
 
     index = {

@@ -15,20 +15,21 @@ ROOT = Path(__file__).resolve().parent.parent
 REGISTER_PATH = ROOT / "docs" / "source" / "rights-register.xlsx"
 OUT_DIR = ROOT / "content" / "specimens"
 
-# Full specimen schema per Integration Spec section 4. Fields not sourced
-# from the register (binomial, status, field-guide/autopsy blocks, and the
-# image/commentary/attribution fields the rendering rule checks) start as
-# null: no species page, plate, or wall copy has been written yet.
+# Full specimen schema per Integration Spec section 4. Register-backed fields
+# are refreshed from the workbook. Editorial fields already written in an
+# existing specimen record are preserved.
 SCHEMA_FIELDS = [
     "accession", "register_id", "common_name", "binomial",
     "first_outbreak", "peak", "status", "undead_rating",
     "habitat", "diet", "predators", "transmission",
     "cause_of_death", "resurrection", "host_population", "mutation", "prognosis",
-    "display_tier", "rights_holder", "evidence_grade", "image_mode",
+    "display_tier", "display_decision", "rights_holder", "evidence_grade", "image_mode",
     "attribution", "commentary", "sources",
     "identifiable_person", "minor_in_image", "merch_posture",
     "underlying_work", "enforcement_history", "curatorial_note",
 ]
+
+DISPLAY_DECISIONS = {"declined", "cleared", "unavailable"}
 
 
 def slug(name):
@@ -42,6 +43,16 @@ def parse_year(value):
     return int(match.group(0)) if match else None
 
 
+def default_display_decision(tier):
+    return "unavailable" if tier == "D3" else "declined"
+
+
+def parse_sources(value):
+    if not value or value == "Not verified this pass":
+        return []
+    return [source.strip() for source in str(value).splitlines() if source.strip()]
+
+
 def main():
     wb = openpyxl.load_workbook(REGISTER_PATH, data_only=True)
     ws = wb["Register"]
@@ -51,15 +62,29 @@ def main():
     data = [row for row in data if re.fullmatch(r"M\d+", str(row[0]))]
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    for existing in OUT_DIR.glob("*.json"):
-        existing.unlink()
+    existing_by_id = {}
+    for existing_path in OUT_DIR.glob("*.json"):
+        existing = json.loads(existing_path.read_text())
+        register_id = existing.get("register_id")
+        if register_id:
+            existing_by_id[register_id] = existing
 
     count = 0
+    written_paths = set()
     for row in data:
         record = dict(zip(header, row))
         source = record["Source"]
 
         specimen = {field: None for field in SCHEMA_FIELDS}
+        specimen.update(existing_by_id.get(record["ID"], {}))
+        decision = specimen.get("display_decision")
+        if decision not in DISPLAY_DECISIONS:
+            decision = default_display_decision(record["Display tier"])
+        if record["Display tier"] == "D3":
+            decision = "unavailable"
+        elif decision == "unavailable":
+            decision = "declined"
+
         specimen.update({
             "register_id": record["ID"],
             "common_name": record["Specimen"],
@@ -74,16 +99,23 @@ def main():
             "identifiable_person": record["Identifiable person"],
             "minor_in_image": record["Minor in image"],
             "display_tier": record["Display tier"],
+            "display_decision": decision,
             "merch_posture": record["Merch posture"],
             "curatorial_note": record["Curatorial note"],
-            "sources": [] if not source or source == "Not verified this pass" else [source],
+            "sources": parse_sources(source),
         })
 
         filename = f"{record['ID'].lower()}-{slug(record['Specimen'])}.json"
-        with open(OUT_DIR / filename, "w") as f:
+        output_path = OUT_DIR / filename
+        with open(output_path, "w") as f:
             json.dump(specimen, f, indent=2, ensure_ascii=False)
             f.write("\n")
+        written_paths.add(output_path)
         count += 1
+
+    for stale_path in OUT_DIR.glob("*.json"):
+        if stale_path not in written_paths:
+            stale_path.unlink()
 
     print(f"Wrote {count} specimen records to {OUT_DIR.relative_to(ROOT)}")
 

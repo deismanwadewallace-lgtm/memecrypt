@@ -13,26 +13,18 @@ import json
 from collections import Counter
 from pathlib import Path
 
+from validate import check_display_rule, renders_image
+
 ROOT = Path(__file__).resolve().parent.parent
 SPECIMENS_DIR = ROOT / "content" / "specimens"
 OUT_PATH = ROOT / "content" / "generated" / "summary.json"
-
-
-def renders_image(specimen):
-    """The rendering rule, verbatim from Integration Spec section 4."""
-    return (
-        specimen.get("display_tier") != "D3"
-        and specimen.get("image_mode") in ("original_plate", "licensed")
-        and bool(specimen.get("commentary"))
-        and bool(specimen.get("attribution"))
-    )
-
 
 def main():
     paths = sorted(SPECIMENS_DIR.glob("*.json"))
     records = [json.loads(p.read_text()) for p in paths]
 
     tier_counts = Counter(r["display_tier"] for r in records)
+    decision_counts = Counter(r["display_decision"] for r in records)
     evidence_counts = Counter(r["evidence_grade"] for r in records)
     rendered = [r for r in records if renders_image(r)]
     placeholder = [r for r in records if not renders_image(r)]
@@ -44,16 +36,12 @@ def main():
     minor_count = sum(1 for r in records if is_yes(r.get("minor_in_image")))
     never_pursue_count = sum(1 for r in records if r.get("merch_posture") == "Never pursue")
 
-    # A D3 specimen must never carry a real image_mode. If one does, a
-    # future contributor uploaded a file the register forbids showing.
-    violations = [
-        r["register_id"] for r in records
-        if r["display_tier"] == "D3" and r.get("image_mode") not in (None, "placeholder")
-    ]
+    failures = [failure for record in records for failure in check_display_rule(record)]
 
     summary = {
         "total_specimens": len(records),
         "display_tier_counts": dict(tier_counts),
+        "display_decision_counts": dict(decision_counts),
         "evidence_grade_counts": dict(evidence_counts),
         "rendered_count": len(rendered),
         "placeholder_count": len(placeholder),
@@ -70,8 +58,8 @@ def main():
     print(f"{len(records)} specimens: {dict(tier_counts)}")
     print(f"{len(rendered)} render an image, {len(placeholder)} fall back to the MC.2026.009 placeholder card.")
 
-    if violations:
-        print(f"INVARIANT VIOLATION: D3 specimens with a non-placeholder image_mode: {violations}")
+    if failures:
+        print("\n".join(f"INVARIANT VIOLATION: {failure}" for failure in failures))
         raise SystemExit(1)
 
 

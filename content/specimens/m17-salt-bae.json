@@ -17,6 +17,7 @@
   "mutation": null,
   "prognosis": null,
   "display_tier": "D3",
+  "display_decision": "unavailable",
   "rights_holder": "Nusret Gokce",
   "evidence_grade": "Reported, not verified this pass",
   "image_mode": null,

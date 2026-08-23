@@ -6,7 +6,8 @@
       "binomial": "Canis contemplans",
       "status": "undead",
       "undead_rating": 5,
-      "display_tier": "D2"
+      "display_tier": "D2",
+      "display_decision": "declined"
     },
     {
       "register_id": "M02",
@@ -14,7 +15,8 @@
       "binomial": "Felis morosa",
       "status": "contained",
       "undead_rating": 5,
-      "display_tier": "D2"
+      "display_tier": "D2",
+      "display_decision": "declined"
     },
     {
       "register_id": "M03",
@@ -22,7 +24,8 @@
       "binomial": "Puer triumphans",
       "status": "corporate",
       "undead_rating": 5,
-      "display_tier": "D2"
+      "display_tier": "D2",
+      "display_decision": "declined"
     },
     {
       "register_id": "M05",
@@ -30,7 +33,8 @@
       "binomial": "Felis arcus",
       "status": "corporate",
       "undead_rating": 4,
-      "display_tier": "D2"
+      "display_tier": "D2",
+      "display_decision": "declined"
     },
     {
       "register_id": "M13",
@@ -38,7 +42,8 @@
       "binomial": "Vultus dolosus",
       "status": "undead",
       "undead_rating": 4,
-      "display_tier": "D2"
+      "display_tier": "D2",
+      "display_decision": "declined"
     },
     {
       "register_id": "M10",
@@ -46,7 +51,8 @@
       "binomial": "Puer infortunatus",
       "status": "dormant",
       "undead_rating": 3,
-      "display_tier": "D2"
+      "display_tier": "D2",
+      "display_decision": "declined"
     },
     {
       "register_id": "M06",
@@ -54,7 +60,8 @@
       "binomial": "Felis rhythmicus",
       "status": "dormant",
       "undead_rating": 3,
-      "display_tier": "D2"
+      "display_tier": "D2",
+      "display_decision": "declined"
     },
     {
       "register_id": "M09",
@@ -62,7 +69,8 @@
       "binomial": "Femina adhaerens",
       "status": "dormant",
       "undead_rating": 3,
-      "display_tier": "D2"
+      "display_tier": "D2",
+      "display_decision": "declined"
     },
     {
       "register_id": "M23",
@@ -70,7 +78,8 @@
       "binomial": "Textus imperativus",
       "status": "extinct",
       "undead_rating": 2,
-      "display_tier": "D2"
+      "display_tier": "D2",
+      "display_decision": "declined"
     },
     {
       "register_id": "M21",
@@ -78,7 +87,8 @@
       "binomial": "Facies anonyma",
       "status": "extinct",
       "undead_rating": 2,
-      "display_tier": "D1"
+      "display_tier": "D1",
+      "display_decision": "declined"
     }
   ],
   "unrated": [
@@ -88,7 +98,35 @@
       "binomial": null,
       "status": null,
       "undead_rating": null,
-      "display_tier": "D2"
+      "display_tier": "D2",
+      "display_decision": "declined"
+    },
+    {
+      "register_id": "M26",
+      "common_name": "Charlie Bit My Finger",
+      "binomial": null,
+      "status": null,
+      "undead_rating": null,
+      "display_tier": "D3",
+      "display_decision": "unavailable"
+    },
+    {
+      "register_id": "M25",
+      "common_name": "Chuck Norris Facts",
+      "binomial": null,
+      "status": null,
+      "undead_rating": null,
+      "display_tier": "D3",
+      "display_decision": "unavailable"
+    },
+    {
+      "register_id": "M27",
+      "common_name": "Dancing Baby",
+      "binomial": null,
+      "status": null,
+      "undead_rating": null,
+      "display_tier": "D2",
+      "display_decision": "declined"
     },
     {
       "register_id": "M08",
@@ -96,7 +134,8 @@
       "binomial": null,
       "status": null,
       "undead_rating": null,
-      "display_tier": "D2"
+      "display_tier": "D2",
+      "display_decision": "declined"
     },
     {
       "register_id": "M07",
@@ -104,7 +143,8 @@
       "binomial": null,
       "status": null,
       "undead_rating": null,
-      "display_tier": "D3"
+      "display_tier": "D3",
+      "display_decision": "unavailable"
     },
     {
       "register_id": "M16",
@@ -112,7 +152,8 @@
       "binomial": null,
       "status": null,
       "undead_rating": null,
-      "display_tier": "D3"
+      "display_tier": "D3",
+      "display_decision": "unavailable"
     },
     {
       "register_id": "M18",
@@ -120,7 +161,17 @@
       "binomial": null,
       "status": null,
       "undead_rating": null,
-      "display_tier": "D2"
+      "display_tier": "D2",
+      "display_decision": "declined"
+    },
+    {
+      "register_id": "M29",
+      "common_name": "Harlem Shake",
+      "binomial": null,
+      "status": null,
+      "undead_rating": null,
+      "display_tier": "D3",
+      "display_decision": "unavailable"
     },
     {
       "register_id": "M12",
@@ -128,7 +179,17 @@
       "binomial": null,
       "status": null,
       "undead_rating": null,
-      "display_tier": "D2"
+      "display_tier": "D2",
+      "display_decision": "declined"
+    },
+    {
+      "register_id": "M28",
+      "common_name": "LOLCats",
+      "binomial": null,
+      "status": null,
+      "undead_rating": null,
+      "display_tier": "D3",
+      "display_decision": "unavailable"
     },
     {
       "register_id": "M22",
@@ -136,7 +197,8 @@
       "binomial": null,
       "status": null,
       "undead_rating": null,
-      "display_tier": "D1"
+      "display_tier": "D1",
+      "display_decision": "declined"
     },
     {
       "register_id": "M04",
@@ -144,7 +206,8 @@
       "binomial": null,
       "status": null,
       "undead_rating": null,
-      "display_tier": "D3"
+      "display_tier": "D3",
+      "display_decision": "unavailable"
     },
     {
       "register_id": "M19",
@@ -152,7 +215,8 @@
       "binomial": null,
       "status": null,
       "undead_rating": null,
-      "display_tier": "D3"
+      "display_tier": "D3",
+      "display_decision": "unavailable"
     },
     {
       "register_id": "M17",
@@ -160,7 +224,8 @@
       "binomial": null,
       "status": null,
       "undead_rating": null,
-      "display_tier": "D3"
+      "display_tier": "D3",
+      "display_decision": "unavailable"
     },
     {
       "register_id": "M11",
@@ -168,7 +233,8 @@
       "binomial": null,
       "status": null,
       "undead_rating": null,
-      "display_tier": "D3"
+      "display_tier": "D3",
+      "display_decision": "unavailable"
     },
     {
       "register_id": "M14",
@@ -176,7 +242,8 @@
       "binomial": null,
       "status": null,
       "undead_rating": null,
-      "display_tier": "D2"
+      "display_tier": "D2",
+      "display_decision": "declined"
     },
     {
       "register_id": "M20",
@@ -184,7 +251,8 @@
       "binomial": null,
       "status": null,
       "undead_rating": null,
-      "display_tier": "D1"
+      "display_tier": "D1",
+      "display_decision": "declined"
     },
     {
       "register_id": "M15",
@@ -192,7 +260,8 @@
       "binomial": null,
       "status": null,
       "undead_rating": null,
-      "display_tier": "D3"
+      "display_tier": "D3",
+      "display_decision": "unavailable"
     }
   ],
   "note": "unrated specimens have no field-guide content yet (undead_rating is null) \u2014 they're queued for a future volume, not missing data."

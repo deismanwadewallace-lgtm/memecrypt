@@ -17,6 +17,7 @@
   "mutation": null,
   "prognosis": null,
   "display_tier": "D3",
+  "display_decision": "unavailable",
   "rights_holder": "Matt Furie",
   "evidence_grade": "Verified",
   "image_mode": null,
