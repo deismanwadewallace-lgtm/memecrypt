@@ -1,0 +1,73 @@
+{
+  "title": "The Koan Wall",
+  "route": "/quotations",
+  "intro": "Thirty original lines, sorted into four families. Every line here is Wade's own writing, which makes this the only wing of the museum with a clean rights position on its own words.",
+  "families": [
+    {
+      "id": "diagnostics",
+      "name": "Diagnostics",
+      "voice": "Short declarative critique. Institutional register.",
+      "product_line": "Mugs and posters.",
+      "lines": [
+        "Feeling isn't thinking. Memes aren't arguments.",
+        "A meme is not a method.",
+        "Don't confuse dopamine with discourse.",
+        "Don't mistake the feeling you get from a meme for thinking.",
+        "Memes: where emotion dresses up as insight.",
+        "Your fears become memes.",
+        "Your memes become manias."
+      ]
+    },
+    {
+      "id": "koans",
+      "name": "Koans",
+      "voice": "The ones that refuse the dopamine hit. The anti-memes proper.",
+      "product_line": "Shirts.",
+      "lines": [
+        "I always say what I meme. I never meme what I say.",
+        "There's no time like the internet.",
+        "It's emojis all the way down.",
+        "I know I said it, but I didn't meme it.",
+        "I know your avatar better than I know you.",
+        "In the land of the bling, the one memed man is king.",
+        "Please don't say anything that exceeds my capacity to represent it with emojis."
+      ],
+      "note": "The last line is the strongest in the corpus: funny, a complete argument about emotional vocabulary, and it takes three seconds longer to land than a meme is supposed to take. That delay is the product."
+    },
+    {
+      "id": "institutional-voice",
+      "name": "Institutional voice",
+      "voice": "Museum signage. Already partly live on the site.",
+      "product_line": "Signage and stickers.",
+      "lines": [
+        "Outbreak level: high.",
+        "Proceed with critical thinking. Avoid sharing on an empty stomach.",
+        "All artifacts reserved.",
+        "Meme archaeologist.",
+        "I survived Rage Comics.",
+        "Eating brains since 2005."
+      ]
+    },
+    {
+      "id": "allusions",
+      "name": "Allusions",
+      "voice": "Work by pointing at a known text. Titles aren't copyrightable, so the lines are usable, but each carries its source in the label — the attribution is not a legal hedge, it is the joke.",
+      "product_line": "Prints, with attribution set as part of the design.",
+      "lines": [
+        { "text": "Memeing ourselves to death.", "attribution": "After Neil Postman." },
+        { "text": "The internet: because everyone wants to be alone together.", "attribution": "After Sherry Turkle." },
+        { "text": "This is not a meme.", "attribution": "After Magritte." }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "text": "I shop therefore I am",
+      "reason": "This is Barbara Kruger's actual artwork, not a style reference. Cut entirely, including any meme-variant parenthetical. Her white-Futura-Bold-Oblique-on-red visual grammar is a style and available; her specific texts are not."
+    },
+    {
+      "text": "This is fine",
+      "reason": "Register entry M14. KC Green sells merch from those exact panels. Printing the phrase competes directly with the author's own market. Discuss the meme in the museum by name — see content/specimens/m14-this-is-fine.json — never print the phrase."
+    }
+  ]
+}

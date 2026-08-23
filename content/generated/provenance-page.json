@@ -1,0 +1,24 @@
+{
+  "title": "Provenance",
+  "route": "/research/provenance",
+  "thesis": "Of twenty-four specimens in the permanent collection, three may be shown freely, fourteen require a rights note, and seven cannot be shown at all. Twelve depict an identifiable person. Four depict a person who was a child at the time.",
+  "closing": "The museum's central finding is administrative rather than theoretical. The ideas belong to everyone. The images belong to somebody.",
+  "founding_cases": [
+    {
+      "name": "The Grumpy Cat verdict",
+      "register_id": "M02",
+      "note": "A 2018 jury verdict of $710,001 against a defendant who had a licence and exceeded it. The clearest merch precedent in the collection."
+    },
+    {
+      "name": "The Success Kid appeal",
+      "register_id": "M03",
+      "note": "Griner v. King for Congress, affirmed by the Eighth Circuit in 2024 and denied certiorari by the Supreme Court in 2025 \u2014 fair use rejected under Warhol."
+    },
+    {
+      "name": "The Pepe enforcement campaign",
+      "register_id": "M04",
+      "note": "Furie v. Infowars settled in 2019 for $15,000 plus destruction of stock; the court declined to hold that meme-ification diminishes the author's copyright."
+    }
+  ],
+  "computed_from": "content/generated/summary.json \u2014 regenerate this page by re-running scripts/build_register.py then scripts/build_provenance.py"
+}

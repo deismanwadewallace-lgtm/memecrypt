@@ -37,6 +37,13 @@ def main():
     rendered = [r for r in records if renders_image(r)]
     placeholder = [r for r in records if not renders_image(r)]
 
+    def is_yes(value):
+        return isinstance(value, str) and value.startswith("Yes")
+
+    identifiable_count = sum(1 for r in records if is_yes(r.get("identifiable_person")))
+    minor_count = sum(1 for r in records if is_yes(r.get("minor_in_image")))
+    never_pursue_count = sum(1 for r in records if r.get("merch_posture") == "Never pursue")
+
     # A D3 specimen must never carry a real image_mode. If one does, a
     # future contributor uploaded a file the register forbids showing.
     violations = [
@@ -52,6 +59,9 @@ def main():
         "placeholder_count": len(placeholder),
         "rendered_ids": [r["register_id"] for r in rendered],
         "placeholder_ids": [r["register_id"] for r in placeholder],
+        "identifiable_person_count": identifiable_count,
+        "minor_in_image_count": minor_count,
+        "merch_posture_never_pursue_count": never_pursue_count,
     }
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
