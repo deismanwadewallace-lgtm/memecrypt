@@ -129,6 +129,19 @@ Charlie Bit My Finger and Chuck Norris Facts flagged for extra sensitivity
 (real identifiable children; a living celebrity's right of publicity).
 All recorded in `content/rights-gaps.json`.
 
+**Other exhibits gallery, sanitized.** Wade supplied a 14-card exhibit
+gallery (`Memecrypt_Exhibit_Cards.zip`) that shipped a real archival
+photograph or video frame for every card. Checked against the register,
+ten of the fourteen were already rows at "licence only" or "never pursue"
+— never pre-cleared — and the other four (Charlie Bit My Finger, Dancing
+Baby, LOLCats, Harlem Shake) are exactly the unregistered memes
+`content/rights-gaps.json` already flags. `docs/production/other-exhibits-gallery/`
+carries the gallery with every photograph and baked export removed: each
+card shows its original line-art specimen mark instead, with a `NOT ON
+DISPLAY` badge and the register status. See that folder's own README for
+the full before/after and what's still needed before any of these
+fourteen could show a real image.
+
 ## What's not here
 
 - **The site's own front end.** The route table describes where this
