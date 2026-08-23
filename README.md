@@ -7,7 +7,9 @@ https://memeolography.madethis.app
 
 This repo is the content and rights foundation underneath that site — not
 yet the site's own code. All five build phases from the integration spec
-are done at the content/data layer; none has a page template yet. See
+are done at the content/data layer. Two framework-independent exhibit pages
+now demonstrate how that material can render, while most routes still have no
+live template. See
 "What's here," "What's not here," and "Repo layout" below.
 
 ## Foundational documents
@@ -30,9 +32,11 @@ Everything under `docs/source/` is a source document, kept verbatim:
   product mockups.
 
 `docs/production/` holds material this repo generated rather than received
-verbatim, including the sanitized Other Exhibits gallery and Volume II species
-plate briefs. `docs/decisions/` records accepted curatorial decisions, and
-`docs/site-copy/` holds implementation-ready copy for the live site.
+verbatim, including the sanitized Other Exhibits gallery, the Department of
+Orthographic Mutations gallery, and Volume II species plate briefs.
+`docs/decisions/` records accepted curatorial decisions, `docs/research/` keeps
+working source notes, and `docs/site-copy/` holds implementation-ready copy for
+the live site.
 
 The public-facing name is **Memeography** (ADR 0005). The repository name,
 historical source documents, `MC.2026.###` accession numbers, and current
@@ -42,6 +46,8 @@ deployment domain remain stable identifiers until they are migrated explicitly.
 
 ```
 content/
+  collections/
+    orthographic-mutations.json # 12 provisional language specimens + annex
   specimens/*.json          # 29 register rows, machine-generated
   products/
     catalogue-v1/*.json     # the 10-object draft catalogue
@@ -59,6 +65,9 @@ data/
   schema/specimen.schema.json # canonical specimen record shape
 docs/
   decisions/                # accepted architecture/curatorial decisions
+  deployment/               # native-site implementation handoffs
+  production/               # framework-independent exhibit implementations
+  research/                 # working source notes for provisional collections
   site-copy/                # implementation-ready live-site copy
 scripts/
   import_register.py        # rights-register.xlsx -> content/specimens/*.json
@@ -67,6 +76,7 @@ scripts/
   build_zombie_index.py     # generated/zombie-index.json
   build_provenance.py       # generated/provenance-page.json
   build_slogan_products.py  # pages/quotations.json -> products/slogan-line/*.json
+  build_orthographic_gallery.py # validates OM collection -> browser data.js
   check_excluded_slogans.py # fails if a barred slogan reaches printed copy
   check_shop_rights.py      # fails if a product lacks an original/placeholder image_source
 ```
@@ -81,6 +91,7 @@ python3 scripts/build_register.py
 python3 scripts/build_zombie_index.py
 python3 scripts/build_provenance.py
 python3 scripts/build_slogan_products.py
+python3 scripts/build_orthographic_gallery.py
 python3 scripts/check_excluded_slogans.py
 python3 scripts/check_shop_rights.py
 ```
@@ -148,12 +159,31 @@ photograph and baked export removed. Each card shows its original line-art
 specimen mark and distinguishes `DECLINED FOR DISPLAY` from `NOT PERMITTED FOR
 DISPLAY`. See that folder's README and ADR 0003 for the full rationale.
 
+**Department of Orthographic Mutations, built.** Twelve language memes now form
+a provisional research collection at `/museum/orthographic-mutations`, with
+five original “Writers at Work” field notes in an interpretive annex. The
+canonical records live in `content/collections/orthographic-mutations.json`;
+the static gallery renders original HTML/CSS typography and makes no external
+image requests. `scripts/build_orthographic_gallery.py` enforces the twelve
+`OM-##` records, validates permanent-register cross-links, and rejects
+asset-bearing fields. Source notes distinguish documented lineage from internet
+origin myth (especially the false Cambridge attribution attached to
+typoglycemia). ADR 0006 records why these remain provisional rather than
+silently becoming M30–M41.
+
+**Curatorial definition, accepted.** ADR 0007 defines a meme as an idea with a
+body designed for circulation rather than an image by necessity. The model
+distinguishes commentary, compression, positioning, and transmission while
+holding the museum's critical tension: a meme can encapsulate an idea, and it
+can replace the work of examining one. Implementation-ready copy for
+`/research/what-is-a-meme` lives in `docs/site-copy/what-is-a-meme.md`.
+
 ## What's not here
 
-- **The site's own front end.** The route table describes where this
-  content should render, but this repo doesn't know what framework the current
-  prototype deployment runs on, so no pages/components exist — every
-  script here produces data, not HTML.
+- **The site's own front end.** The route table describes where this content
+  should render, but this repo does not contain the current MadeThis project.
+  The two galleries under `docs/production/` are portable static reference
+  implementations, not a connected deployment or framework component tree.
 - **Product images.** The 3 launch-collection mockups and any Volume II
   species plates were shared as pasted chat images, which this session
   can't save to disk — only file attachments persist. `assets/` is empty.

@@ -1,0 +1,336 @@
+{
+  "collection_id": "OM",
+  "title": "Department of Orthographic Mutations",
+  "subtitle": "Twelve small failures of language that learned to reproduce",
+  "route": "/museum/orthographic-mutations",
+  "status": "provisional-research-collection",
+  "date_opened": "2026-08-23",
+  "curatorial_thesis": "Internet language does not merely carry memes. Punctuation, spelling, syntax, capitalization, and error can become the meme's transmissible body.",
+  "registration_note": "OM numbers are working collection identifiers, not permanent M## register IDs. A record receives an M## ID only after a separate rights, provenance, and curatorial review.",
+  "display_policy": {
+    "mode": "original-text-only",
+    "third_party_images": false,
+    "rule": "Render the linguistic mechanism as original typography, diagrams, or interface-like notation. Do not reproduce a source meme image, copyrighted character, screenshot, logo, or identifiable person.",
+    "rights_note": "Descriptive titles and linked research sources identify the forms under discussion; they do not authorize reproduction of the best-known visual instance."
+  },
+  "specimens": [
+    {
+      "id": "OM-01",
+      "slug": "punctuation-saves-lives",
+      "title": "Punctuation Saves Lives",
+      "classification": "Comma-rescue formula",
+      "category": "punctuation",
+      "period": "Pre-social web / recurring",
+      "mechanism": "A mark changes the grammatical relationship between an action and its apparent object.",
+      "mutation": "The comma migrates; kinship becomes cuisine.",
+      "epitaph": "One breath between invitation and ingestion.",
+      "curatorial_note": "The familiar formula turns proofreading into miniature catastrophe. Its durability comes from compression: one tiny mark, one instantly legible reversal, no picture required.",
+      "evidence_grade": "B",
+      "source_label": "Open English at SLCC — Punctuation Memes and Choice",
+      "source_url": "https://pressbooks.pub/openenglishatslcc/chapter/punctuation-memes-and-choice/",
+      "rights_posture": "Original typographic demonstration; no circulating meme image reproduced.",
+      "related_register_ids": [],
+      "visual": {
+        "kind": "comma",
+        "primary": "LET’S EAT",
+        "secondary": "GRANDMA",
+        "accent": ","
+      }
+    },
+    {
+      "id": "OM-02",
+      "slug": "oxford-comma-wars",
+      "title": "Oxford Comma Wars",
+      "classification": "Editorial allegiance signal",
+      "category": "punctuation",
+      "period": "Print inheritance / social-web recurrence",
+      "mechanism": "An optional serial comma becomes a proxy contest over clarity, authority, and house style.",
+      "mutation": "A style choice acquires factions.",
+      "epitaph": "The smallest battlefield in the style guide.",
+      "curatorial_note": "The meme is not simply about ambiguity. It lets people perform an editorial identity in public, turning a convention into a badge of belonging.",
+      "evidence_grade": "B",
+      "source_label": "Know Your Meme — Oxford Comma",
+      "source_url": "https://knowyourmeme.com/memes/oxford-comma",
+      "rights_posture": "Original list and typographic treatment; no source cartoon or image macro reproduced.",
+      "related_register_ids": [],
+      "visual": {
+        "kind": "serial-comma",
+        "primary": "INK, PAPER",
+        "secondary": "AND PANIC",
+        "accent": ","
+      }
+    },
+    {
+      "id": "OM-03",
+      "slug": "the-alot",
+      "title": "A Lot / Alot",
+      "classification": "Whitespace creature",
+      "category": "spelling",
+      "period": "2010 / blog-web circulation",
+      "mechanism": "A common word-boundary error is reimagined as if the fused form named a thing.",
+      "mutation": "Whitespace disappears; an imaginary noun appears.",
+      "epitaph": "The space went missing. Something moved in.",
+      "curatorial_note": "Allie Brosh’s famous ‘Alot’ gives a spelling correction a body and personality. This exhibit keeps only the linguistic mutation: two words, the gap between them, and the creature we refuse to redraw.",
+      "evidence_grade": "B",
+      "source_label": "Know Your Meme — The Alot",
+      "source_url": "https://knowyourmeme.com/memes/the-alot",
+      "rights_posture": "Text-only analysis. Allie Brosh’s character and artwork are not reproduced or imitated.",
+      "related_register_ids": [],
+      "visual": {
+        "kind": "word-gap",
+        "primary": "A LOT",
+        "secondary": "ALOT",
+        "accent": "≠"
+      }
+    },
+    {
+      "id": "OM-04",
+      "slug": "muphrys-law",
+      "title": "Muphry’s Law",
+      "classification": "Reflexive correction failure",
+      "category": "spelling",
+      "period": "1992 name / older editorial folklore",
+      "mechanism": "A criticism of another person’s writing attracts an error of its own.",
+      "mutation": "Correction becomes self-demonstration.",
+      "epitaph": "The proofreader entered the specimen.",
+      "curatorial_note": "Often grouped with Skitt’s Law online, the form punishes certainty rather than error. The higher the corrective posture, the more memorable the returning typo.",
+      "evidence_grade": "B",
+      "source_label": "Know Your Meme — Skitt’s Law",
+      "source_url": "https://knowyourmeme.com/memes/skitts-law",
+      "rights_posture": "Original wording and diagram; no source post or screenshot reproduced.",
+      "related_register_ids": [],
+      "visual": {
+        "kind": "correction-loop",
+        "primary": "EDITING RULES",
+        "secondary": "INVITE TYPOS",
+        "accent": "↺"
+      }
+    },
+    {
+      "id": "OM-05",
+      "slug": "typoglycemia",
+      "title": "Typoglycemia",
+      "classification": "Scrambled-letter demonstration",
+      "category": "spelling",
+      "period": "2003 email-forward boom",
+      "mechanism": "Interior letters are transposed while enough lexical and sentence context remains to support recognition.",
+      "mutation": "A conditional reading effect becomes a universal neuroscience claim.",
+      "epitaph": "Readable is not the same as proven.",
+      "curatorial_note": "The circulating paragraph is a double specimen: a genuine demonstration of flexible word recognition and a false attribution to Cambridge research. The debunking travels more slowly than the wonder.",
+      "evidence_grade": "A",
+      "source_label": "Wikipedia — Transposed letter effect",
+      "source_url": "https://en.wikipedia.org/wiki/Transposed_letter_effect",
+      "rights_posture": "New scrambled phrase; the widely copied email paragraph is not reproduced.",
+      "related_register_ids": [],
+      "visual": {
+        "kind": "scramble",
+        "primary": "MENAING SRUVIVES",
+        "secondary": "MVOEMENT?",
+        "accent": "ABC"
+      }
+    },
+    {
+      "id": "OM-06",
+      "slug": "ough",
+      "title": "The OUGH Outbreak",
+      "classification": "Orthographic divergence cluster",
+      "category": "spelling",
+      "period": "Old spelling / recurring internet list",
+      "mechanism": "The same four-letter sequence carries multiple pronunciations across common English words.",
+      "mutation": "One spelling develops incompatible voices.",
+      "epitaph": "Four letters. No reliable alibi.",
+      "curatorial_note": "Lists of -ough words turn the historical sediment of English spelling into spectacle. They are less a lesson than a public demonstration that the system contains fossils.",
+      "evidence_grade": "A",
+      "source_label": "British Council IELTS — confusing English words",
+      "source_url": "https://takeielts.britishcouncil.org/blog/confusing-english-words-for-ielts-how-to-avoid-mistakes",
+      "rights_posture": "Original word-list composition and typography.",
+      "related_register_ids": [],
+      "visual": {
+        "kind": "ough-grid",
+        "primary": "THOUGH  THROUGH  TOUGH",
+        "secondary": "THOUGHT  COUGH",
+        "accent": "OUGH"
+      }
+    },
+    {
+      "id": "OM-07",
+      "slug": "teh",
+      "title": "TEH",
+      "classification": "Canonical transposition",
+      "category": "spelling",
+      "period": "1990s–2000s internet vernacular",
+      "mechanism": "A frequent keyboard transposition stops functioning only as error and begins functioning as tone.",
+      "mutation": "Mistype becomes register.",
+      "epitaph": "The typo learned when to arrive on purpose.",
+      "curatorial_note": "‘Teh’ crosses the decisive boundary from mistake to selectable voice. Once intentional, it can signal speed, irony, in-group fluency, or affectionate incompetence.",
+      "evidence_grade": "B",
+      "source_label": "Know Your Meme — Teh",
+      "source_url": "https://knowyourmeme.com/memes/teh",
+      "rights_posture": "Original keyboard diagram; no source screenshot reproduced.",
+      "related_register_ids": [],
+      "visual": {
+        "kind": "transposition",
+        "primary": "THE",
+        "secondary": "TEH",
+        "accent": "H⇄E"
+      }
+    },
+    {
+      "id": "OM-08",
+      "slug": "one-phenomenon",
+      "title": "The !1 Phenomenon",
+      "classification": "Shift-key leakage",
+      "category": "tone",
+      "period": "Early chat and forum culture",
+      "mechanism": "A stray numeral reveals the physical release of Shift during an escalating run of exclamation marks.",
+      "mutation": "Mechanical slip becomes emotional notation.",
+      "epitaph": "Excitement exceeded keyboard control.",
+      "curatorial_note": "The 1 is funny because it records the hand. Later, deliberate forms such as ‘!!1one’ imitate the accident and make excess itself visible.",
+      "evidence_grade": "B",
+      "source_label": "Know Your Meme — The !1 Phenomenon",
+      "source_url": "https://knowyourmeme.com/memes/the-1-phenomenon",
+      "rights_posture": "Original typographic treatment; no source post reproduced.",
+      "related_register_ids": [],
+      "visual": {
+        "kind": "shift-leak",
+        "primary": "!!!!!",
+        "secondary": "1",
+        "accent": "SHIFT"
+      }
+    },
+    {
+      "id": "OM-09",
+      "slug": "i-accidentally",
+      "title": "I Accidentally the Whole Thing",
+      "classification": "Missing-verb snowclone",
+      "category": "syntax",
+      "period": "2008 / imageboard and forum circulation",
+      "mechanism": "A required verb is omitted, leaving the listener to infer an event from context and comic panic.",
+      "mutation": "The grammatical hole becomes the punchline.",
+      "epitaph": "The verb did not survive transmission.",
+      "curatorial_note": "Unlike a simple typo, the missing word opens a generative slot. Each repetition can imply a different disaster while keeping the same conspicuous absence.",
+      "evidence_grade": "B",
+      "source_label": "Know Your Meme — I Accidentally",
+      "source_url": "https://knowyourmeme.com/memes/i-accidentally",
+      "rights_posture": "Original sentence and missing-word notation; no source image reproduced.",
+      "related_register_ids": [],
+      "visual": {
+        "kind": "missing-verb",
+        "primary": "I ACCIDENTALLY",
+        "secondary": "THE ENTIRE SENTENCE",
+        "accent": "[VERB NOT FOUND]"
+      }
+    },
+    {
+      "id": "OM-10",
+      "slug": "lolspeak",
+      "title": "LOLspeak",
+      "classification": "Productive mock-dialect",
+      "category": "vernacular",
+      "period": "2005–2007 breakout",
+      "mechanism": "Nonstandard spelling, altered auxiliaries, lexical play, and cat-centred voice combine into a repeatable grammar.",
+      "mutation": "A caption style becomes a language game.",
+      "epitaph": "The cat is optional. The syntax remains infected.",
+      "curatorial_note": "LOLspeak is important because it became productive: participants did not merely repeat one caption, but generated new sentences within a recognizable rule-set. The museum studies that rule-set without displaying a cat photograph.",
+      "evidence_grade": "B",
+      "source_label": "Know Your Meme — LOLcats",
+      "source_url": "https://knowyourmeme.com/memes/lolcats",
+      "rights_posture": "Original grammatical diagram. No cat photograph, LOLcat image macro, or third-party caption reproduced.",
+      "related_register_ids": ["M28"],
+      "visual": {
+        "kind": "grammar-tree",
+        "primary": "AUXILIARY DROPPED",
+        "secondary": "ARTICLE MUTATED",
+        "accent": "CAT NOT REQUIRED"
+      }
+    },
+    {
+      "id": "OM-11",
+      "slug": "dogespeak",
+      "title": "Dogespeak",
+      "classification": "Modifier-mismatch dialect",
+      "category": "vernacular",
+      "period": "2013 breakout",
+      "mechanism": "Degree modifiers are paired with grammatically unexpected words in short, floating fragments.",
+      "mutation": "Incorrect combination becomes a generative rule.",
+      "epitaph": "Much grammar. Very mutation. Still alive.",
+      "curatorial_note": "Doge’s visual source is registered elsewhere as M01 and declined for display. Here the language stands alone: brief fragments, deliberate mismatch, and a voice recognizable after the photograph is gone.",
+      "evidence_grade": "A",
+      "source_label": "Wikipedia — Doge (meme)",
+      "source_url": "https://en.wikipedia.org/wiki/Doge_%28meme%29",
+      "rights_posture": "Original typographic analysis; Kabosu’s photograph and Doge artwork are not reproduced.",
+      "related_register_ids": ["M01"],
+      "visual": {
+        "kind": "modifier-cloud",
+        "primary": "VERY GRAMMAR",
+        "secondary": "MUCH MUTATION",
+        "accent": "WOW"
+      }
+    },
+    {
+      "id": "OM-12",
+      "slug": "alternating-capital-sarcasm",
+      "title": "Alternating-Capital Sarcasm",
+      "classification": "Case-pattern prosody",
+      "category": "tone",
+      "period": "2017 breakout / continuing convention",
+      "mechanism": "Irregular upper- and lowercase letters make a written sentence perform a mocking vocal contour.",
+      "mutation": "Capitalization acquires a voice.",
+      "epitaph": "Prosody entered through the Shift key.",
+      "curatorial_note": "The convention became larger than its best-known SpongeBob template. Alternating case can now carry mockery without any image, a rare example of a meme’s caption escaping its original visual host.",
+      "evidence_grade": "B",
+      "source_label": "Know Your Meme — Mocking SpongeBob",
+      "source_url": "https://knowyourmeme.com/memes/mocking-spongebob",
+      "rights_posture": "Original sentence and typography. SpongeBob character art and source imagery are not reproduced or imitated.",
+      "related_register_ids": [],
+      "visual": {
+        "kind": "alternating-case",
+        "primary": "tOnE eNtErS",
+        "secondary": "tHe TeXt",
+        "accent": "AaAa"
+      }
+    }
+  ],
+  "writers_at_work": {
+    "title": "Writers at Work",
+    "status": "interpretive-annex",
+    "note": "These are original museum observations about recurring writing-meme motifs, not claims that one canonical image or phrasing owns the joke.",
+    "field_notes": [
+      {
+        "id": "WA-01",
+        "title": "You Should Be Writing",
+        "signal": "The browser has detected an unauthorized research tab.",
+        "mode": "deadline",
+        "source_url": "https://www.writerswrite.com/writingmemes/"
+      },
+      {
+        "id": "WA-02",
+        "title": "Writer’s Block",
+        "signal": "The blank page has begun evaluating the author.",
+        "mode": "blank-page",
+        "source_url": "https://www.writerswrite.com/writingmemes/writers-block/"
+      },
+      {
+        "id": "WA-03",
+        "title": "Kill Your Darlings",
+        "signal": "The favourite sentence has requested another appeal.",
+        "mode": "revision",
+        "source_url": "https://www.writingforward.com/storytelling/storytelling-kill-your-darlings"
+      },
+      {
+        "id": "WA-04",
+        "title": "Research Rabbit Hole",
+        "signal": "Twenty-seven sources recovered. Paragraph still missing.",
+        "mode": "research",
+        "source_url": null
+      },
+      {
+        "id": "WA-05",
+        "title": "The Outline Has Been Overruled",
+        "signal": "The characters have formed an unauthorized committee.",
+        "mode": "characters",
+        "source_url": null
+      }
+    ]
+  }
+}

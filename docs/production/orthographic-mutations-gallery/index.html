@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Twelve original text-led exhibits about the spelling, punctuation, syntax, and tone mutations that became internet memes."
+    />
+    <title>Memeography — Department of Orthographic Mutations</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="data.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#collection">Skip to the collection</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Memeography home">
+        <span class="brand__mark" aria-hidden="true">M:</span>
+        <span>MEMEOGRAPHY</span>
+      </a>
+      <nav aria-label="Page navigation">
+        <a href="#collection">Specimens</a>
+        <a href="#writers">Writers at Work</a>
+        <a href="#method">Method</a>
+      </nav>
+      <p class="header-code">Department OM / Est. 2026</p>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero__index" aria-hidden="true">
+          <span>ORTHO</span>
+          <span>GRAPHIC</span>
+          <span>MUTATION</span>
+        </div>
+        <div class="hero__copy">
+          <p class="eyebrow">Special collection · Provisional records OM-01–OM-12</p>
+          <h1 id="page-title">Language caught in the act of becoming contagious.</h1>
+          <p class="hero__standfirst">
+            Sometimes a meme needs a photograph. Sometimes it needs four
+            letters, one missing verb, or a comma in mortal danger.
+          </p>
+        </div>
+        <aside class="hero__aside" aria-label="Collection thesis">
+          <span class="note-number">Finding 01</span>
+          <blockquote>
+            A typo is an accident. A meme begins when someone learns how to
+            repeat it.
+          </blockquote>
+        </aside>
+        <div class="hero__stats" role="list" aria-label="Collection statistics">
+          <div role="listitem"><strong>12</strong><span>provisional specimens</span></div>
+          <div role="listitem"><strong>00</strong><span>third-party images</span></div>
+          <div role="listitem"><strong>05</strong><span>writers’ field notes</span></div>
+        </div>
+      </section>
+
+      <section class="policy-band" aria-labelledby="policy-title">
+        <p class="eyebrow">Display protocol</p>
+        <h2 id="policy-title">The images have been removed from the experiment.</h2>
+        <p>
+          Each exhibit isolates a mechanism—punctuation, spelling, syntax,
+          capitalization, or error—and renders it as original typography. A
+          source link establishes lineage. It does not import a character,
+          photograph, screenshot, or logo.
+        </p>
+      </section>
+
+      <section id="collection" class="collection" aria-labelledby="collection-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Department archive</p>
+            <h2 id="collection-title">The mutations</h2>
+          </div>
+          <p id="result-count" class="result-count" aria-live="polite"></p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter specimens by mechanism">
+          <button class="filter is-active" type="button" data-filter="all">All mutations</button>
+          <button class="filter" type="button" data-filter="punctuation">Punctuation</button>
+          <button class="filter" type="button" data-filter="spelling">Spelling</button>
+          <button class="filter" type="button" data-filter="syntax">Syntax</button>
+          <button class="filter" type="button" data-filter="vernacular">Vernacular</button>
+          <button class="filter" type="button" data-filter="tone">Tone</button>
+        </div>
+
+        <div id="specimen-grid" class="specimen-grid"></div>
+      </section>
+
+      <section id="writers" class="writers" aria-labelledby="writers-title">
+        <div class="writers__intro">
+          <p class="eyebrow">Interpretive annex · WA-01–WA-05</p>
+          <h2 id="writers-title">Writers at Work</h2>
+          <p>
+            Five recurring occupational hazards. Original museum observations;
+            no borrowed templates and no canonical image required.
+          </p>
+        </div>
+        <div id="writers-grid" class="writers-grid"></div>
+      </section>
+
+      <section id="method" class="method" aria-labelledby="method-title">
+        <div>
+          <p class="eyebrow">Registration note</p>
+          <h2 id="method-title">Working numbers, permanent caution.</h2>
+        </div>
+        <div class="method__copy">
+          <p>
+            <strong>OM is a research collection.</strong> These numbers do not
+            extend the permanent M01–M29 register. An object receives an M-number
+            only after separate provenance, rights, and curatorial review.
+          </p>
+          <p>
+            Famous hosts remain off the wall: the Alot creature, cat photos,
+            Kabosu, and SpongeBob are research context—not display material.
+          </p>
+          <a href="../../research/orthographic-mutations-source-notes.md">Read the source notes →</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <p class="site-footer__brand">MEMEOGRAPHY</p>
+        <p>Zombie Memes Museum / Department OM</p>
+      </div>
+      <p>Proceed with critical thinking. Keep the context attached.</p>
+    </footer>
+  </body>
+</html>

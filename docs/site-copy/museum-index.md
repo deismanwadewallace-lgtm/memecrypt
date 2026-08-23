@@ -8,7 +8,7 @@ photographs is a room inside the museum, not its entrance.
 
 Museum
 
-# Four wings, one collection.
+# Five wings, one permanent collection.
 
 The crypt is organised by what each object did after it stopped being funny.
 Enter anywhere. The specimens do not observe a route.
@@ -33,12 +33,19 @@ The wing without photographs. Fourteen specimens held behind the rights
 register, catalogued by name and shown by absence.
 → `/museum/other-exhibits`
 
+**05 — Department of Orthographic Mutations**
+Language caught in the act of becoming contagious. Twelve provisional objects
+in which a comma, typo, missing verb, or typographic accident learned how to
+reproduce.
+→ `/museum/orthographic-mutations`
+
 ---
 
 Collection status
 
-**29 specimens registered. 14 on catalogue without photographs. 11 that the
-museum is not permitted to show at all.**
+**29 permanent specimens registered. 12 linguistic mutations under provisional
+study. 14 on catalogue without photographs. 11 that the museum is not permitted
+to show at all.**
 
 The ideas belong to everyone. The images belong to somebody.
 
