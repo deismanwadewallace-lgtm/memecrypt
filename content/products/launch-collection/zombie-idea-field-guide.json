@@ -1,0 +1,20 @@
+{
+  "handle": "zombie-idea-field-guide",
+  "title": "Zombie Idea Field Guide",
+  "sku": "MCR-DECK-FG001",
+  "category": "Learning tools",
+  "price_cad": 32.00,
+  "status": "coming-soon",
+  "image": "assets/zombie-idea-field-guide-product.png",
+  "image_status": "pending: mockup shared in chat, not yet attached as a file for the repo",
+  "format": "36-card field deck in a matte tuck box",
+  "short_description": "Identify before you amplify.",
+  "alt_text": "Matte black Zombie Idea Field Guide card box beside five black museum-style cards labelled Habitat, Vector, Host, Mutation, and Undead Rating.",
+  "description": "A pocket identification system for ideas that refuse to stay buried. Each field card records a specimen's habitat, transmission vector, preferred host, mutations, and undead rating. Use it to slow the reflex to share, compare recurring patterns, and ask what disappeared when the idea was compressed.\n\nThis is an educational observation tool, not a diagnostic instrument.",
+  "planned_deck_structure": [
+    "24 specimen and pattern cards",
+    "5 observation cards: Habitat, Vector, Host, Mutation, and Undead Rating",
+    "6 critical-response prompts",
+    "1 quick-reference rating key"
+  ]
+}

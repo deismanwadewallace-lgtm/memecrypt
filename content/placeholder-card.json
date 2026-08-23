@@ -1,0 +1,7 @@
+{
+  "accession": "MC.2026.009",
+  "title": "Specimen not on display",
+  "wall_label": "This object could not be exhibited. The rights holder declined, or could not be located, or the object was never anyone's to give away. The museum regrets the omission and notes that the specimen continues to circulate freely everywhere except here.",
+  "rendered_for": "Any specimen whose display_tier is D3, or whose image_mode/commentary/attribution are not all filled in yet. See scripts/build_register.py.",
+  "merch_note": "The card itself is sellable. It contains no third-party work."
+}

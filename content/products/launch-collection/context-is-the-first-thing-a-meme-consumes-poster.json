@@ -1,0 +1,20 @@
+{
+  "handle": "context-is-the-first-thing-a-meme-consumes-poster",
+  "title": "Context Is the First Thing a Meme Consumes — Exhibition Poster",
+  "sku": "MCR-PRT-CTX001",
+  "category": "Prints",
+  "price_cad": 28.00,
+  "status": "draft",
+  "image": "assets/context-consumes-poster-product.png",
+  "image_status": "pending: mockup shared in chat, not yet attached as a file for the repo",
+  "sizes": ["12 x 18 in", "20 x 30 in"],
+  "short_description": "A field note from the Museum, printed before the context disappeared.",
+  "alt_text": "Bone-white exhibition poster on a black gallery wall reading Context Is the First Thing a Meme Consumes. in tall black type with a small acid-green skull.",
+  "description": "The Museum's working thesis, set as a limited-edition exhibition poster: \"Context is the first thing a meme consumes.\" The stark condensed type and faint compression traces turn a research proposition into a visual warning about what gets lost when an idea becomes easy to repeat.",
+  "features": [
+    "Heavy uncoated warm-white stock",
+    "Carbon-black typography with an acid-green specimen mark",
+    "Ships unframed",
+    "Portrait 2:3 format"
+  ]
+}
