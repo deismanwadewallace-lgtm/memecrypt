@@ -3,7 +3,7 @@
   "title": "Zombie Idea Field Guide",
   "sku": "MCR-DECK-FG001",
   "category": "Learning tools",
-  "price_cad": 32.00,
+  "price_cad": 32.0,
   "status": "coming-soon",
   "image": "assets/zombie-idea-field-guide-product.png",
   "image_status": "pending: mockup shared in chat, not yet attached as a file for the repo",
@@ -16,5 +16,6 @@
     "5 observation cards: Habitat, Vector, Host, Mutation, and Undead Rating",
     "6 critical-response prompts",
     "1 quick-reference rating key"
-  ]
+  ],
+  "image_source": "original_design"
 }

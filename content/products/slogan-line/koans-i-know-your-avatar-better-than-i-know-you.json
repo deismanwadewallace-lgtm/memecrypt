@@ -1,0 +1,12 @@
+{
+  "accession": null,
+  "sku": null,
+  "family": "koans",
+  "slogan": "I know your avatar better than I know you.",
+  "attribution": null,
+  "substrate": "Shirt",
+  "price": null,
+  "status": "concept",
+  "image_source": "original_design",
+  "note": "Price, SKU, and accession are unassigned pending the currency/fulfilment decision in Integration Spec section 9."
+}

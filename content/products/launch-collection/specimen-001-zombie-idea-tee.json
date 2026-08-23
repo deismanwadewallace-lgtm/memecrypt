@@ -3,7 +3,7 @@
   "title": "Specimen 001: Zombie Idea Heavyweight Tee",
   "sku": "MCR-TEE-SP001",
   "category": "Apparel",
-  "price_cad": 44.00,
+  "price_cad": 44.0,
   "status": "draft",
   "image": "assets/specimen-001-tee-product.png",
   "image_status": "pending: mockup shared in chat, not yet attached as a file for the repo",
@@ -17,7 +17,17 @@
     "Museum-specimen label design"
   ],
   "variants": {
-    "color": ["Black"],
-    "size": ["S", "M", "L", "XL", "2XL", "3XL"]
-  }
+    "color": [
+      "Black"
+    ],
+    "size": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  "image_source": "original_design"
 }

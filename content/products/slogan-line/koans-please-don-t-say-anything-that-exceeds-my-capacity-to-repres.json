@@ -1,0 +1,12 @@
+{
+  "accession": null,
+  "sku": null,
+  "family": "koans",
+  "slogan": "Please don't say anything that exceeds my capacity to represent it with emojis.",
+  "attribution": null,
+  "substrate": "Shirt",
+  "price": null,
+  "status": "concept",
+  "image_source": "original_design",
+  "note": "Price, SKU, and accession are unassigned pending the currency/fulfilment decision in Integration Spec section 9."
+}

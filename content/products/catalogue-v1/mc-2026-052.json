@@ -8,5 +8,6 @@
   },
   "shop_copy": "The only artifact in the shop that will not travel.",
   "price_usd": 180,
-  "status": "concept"
+  "status": "concept",
+  "image_source": "original_design"
 }
